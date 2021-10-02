@@ -1,4 +1,4 @@
-## POTCAR_maker
+## Introduction
 This script automatically reads in elements from POSCAR and generates proper POTCAR. 
 
 ## How to Use
