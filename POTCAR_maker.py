@@ -11,7 +11,7 @@ def find_elements_from_POSCAR(file):
 def write_POTCAR(element_list,POTCAR_Dir):
     return_file = ""
     for element in element_list:
-        with open(POTCAR_Dir + "/POTCAR_" + element) as file:
+        with open(POTCAR_Dir + element +  "/POTCAR") as file:
             return_file = return_file + file.read()
     with open("POTCAR","a") as file:
         file.write(return_file)
